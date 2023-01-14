@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-image: url("/back.jpg");
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* header st  */
+.header {
+  background-color: rgb(3, 30, 59);
+  padding: 10px 5%;
+  position: relative;
+  box-shadow: 5px 5px 10px 0.5px black;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 20;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.logo {
+  font-size: 22px;
+  color: white;
+  font-weight: 80px;
+  line-height: 70px;
+  flex: 3;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex: 2;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  font-size: 23px;
+  flex: 1;
+}
+
+.icon a {
+  color: white;
+}
+.icon a :hover {
+  color: red;
+  transition: all 1s ease-in;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  gap: 60px;
+}
+/* .hum {
+    font-size: 40px;
+  }
+   */
+
+/* side bar styleing st  */
+.sidebar-icon {
+  width: 22px;
+  height: 22px;
+  z-index: 40;
+  cursor: pointer;
+}
+.spinner {
+  height: 3px;
+  background: white;
+  transition: all 0.3s;
+}
+.spinner.middle,
+.spinner.bottom {
+  margin-top: 5px;
+}
+
+/* give function st  */
+#opensidebarmenu:checked ~ .sidebar-icon > .spinner.middle {
+  opacity: 0;
+}
+
+#opensidebarmenu:checked ~ .sidebar-icon > .spinner.top {
+  transform: rotate(135deg);
+  margin-top: 9px;
+}
+
+#opensidebarmenu:checked ~ .sidebar-icon > .spinner.bottom {
+  transform: rotate(-135deg);
+  margin-top: -11px;
+}
+
+/* giving function end  */
+#opensidebarmenu {
+  display: none;
+}
+/* side bar styleing end  */
+
+/* side bar menu work start here   */
+.s-menu {
+  height: 100vh;
+  position: fixed;
+  left: -260px;
+  top: 0;
+  width: 260px;
+  z-index: 60;
+  background-color: black;
+  transform: translateX(-260px);
+}
+.s-menu a {
+  color: white;
+  padding: 50px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.s-menu a:hover {
+  color: rgb(206, 186, 9);
+  transition: all 1s ease-in;
+}
+.s-menu ul {
+  margin-top: 50px;
+}
+.s-menu ul li {
+  padding-top: 30px;
+}
+
+/* header end  */
+
+/* first section work start here  */
+.b-section {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  padding: 5% 10%;
+}
+.b-para h2 {
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  line-height: 70px;
+}
+.b-para p {
+  font-size: 18px;
+  color: white;
+  line-height: 30px;
+  padding: 45px 0px;
+}
+/* first section work start here  */
+.b-section {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  padding: 5% 10%;
+}
+.b-para h2 {
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  line-height: 70px;
+}
+.b-para p {
+  font-size: 18px;
+  color: white;
+  line-height: 30px;
+  padding: 45px 0px;
+}
+
+/* first section btn work st  */
+.section-btn-first {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  padding: 5% 0%;
+}
+.read-more {
+  padding: 20px 50px;
+  color: rgb(247, 247, 247);
+  border: 2px solid white;
+background: none;
+  font-size: 18px;
+}
+.read-more:hover {
+  background-color: rgb(246, 190, 0);
+  color: white;
+  transition: all 0.8s;
+}
+.btn-quote {
+  padding: 18px 45px;
+  color: rgb(255, 255, 255);
+  background: none;
+  border: 2px solid white;
+  font-size: 18px;
+}
+.btn-quote:hover {
+  background-color: rgb(246, 190, 0);
+  color: white;
+  transition: all 0.8s;
+}
+/* first section btn work end  */
+
+
+/* second section work start here  */
+
+.main-box {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+/* first card work st */
+.card-one {
+  padding: 28px;
+  background-color: rgb(253, 253, 253);
+  word-wrap: break-word;
+  transition: all 3s ease;
+}
+.card-one:hover {
+  background-color: yellow;
+}
+.card-one h2 {
+  text-align: center;
+  font-size: 22px;
+  line-height: 60px;
+  padding-top: 65px;
+  color: black;
+}
+
+.card-one p {
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  padding-bottom: 30px;
+}
+
+/* first card work end  */
+.card-three {
+  padding: 28px;
+  background-color: rgb(255, 255, 255);
+  word-wrap: break-word;
+  transition: all 3s ease;
+}
+.card-three:hover {
+  background-color: yellow;
+}
+.card-three h2 {
+  text-align: center;
+  font-size: 22px;
+  line-height: 60px;
+  padding-top: 65px;
+
+  color: black;
+}
+.card-three p {
+  text-align: center;
+  font-size: 18px;
+  color: black;
+
+  padding-bottom: 30px;
+}
+/* 2nd card work end  */
+.card-four {
+  padding: 28px;
+  background-color: rgb(255, 255, 255);
+  transition: all 3s ease;
+}
+.card-four:hover {
+  background-color: yellow;
+}
+.card-four h2 {
+  text-align: center;
+  font-size: 22px;
+  line-height: 60px;
+  padding-top: 65px;
+
+  color: black;
+}
+.card-four p {
+  text-align: center;
+  font-size: 18px;
+  color: black;
+
+  padding-bottom: 30px;
+}
+/* 3 card work end here  */
+.card-five {
+  padding: 28px;
+  background-color: rgb(245, 245, 245);
+  word-wrap: break-word;
+  transition: all 3s ease;
+}
+.card-five:hover {
+  background-color: yellow;
+}
+.card-five h2 {
+  text-align: center;
+  font-size: 22px;
+  line-height: 60px;
+  padding-top: 65px;
+  color: black;
+}
+.card-five p {
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  padding-bottom: 30px;
+}
+/* second section work end header  */
+/* 3rd section coin css start here  */
+.parent-main{
+  margin-top: 130px;
+  padding:  0 23%;
+}
+
+.about-main{
+  padding: 5%;
+  border: 2px solid rgb(248, 248, 248);
+  border-style: dashed;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  
+}
+
+.bit-one h2{
+  font-size: 45px;
+  padding-top: 55px;
+  color: white;
+}
+.bit-one p{
+  padding-top: 25px;
+  font-size: 18px;
+  color: white;
+  line-height: 30px;
+  padding-bottom: 80px;
+ 
+}
+/* button work start here  */
+.bit-btn  {
+  padding: 20px 60px ;
+ font-size: 20px;
+ background-color: white;
+ text-transform: capitalize;
+  color: black;
+  border: 2px solid black;
+  transition: all 0.8s ease;
+}
+button:hover{
+  background-color: rgb(255, 174, 0);
+}
+/* button work end here  */
+/* 3rd section coin css end here  */
+
+
+
+
+
+/* media quary for first section start  */
+@media screen and (max-width: 500px) {
+  .b-section {
+    flex-direction: column;
+  }
+  .b-image img{
+   width: 100%;
+  }
+  .read-more {
+    padding: 10px 60px;
+  }
+  .btn-quote {
+    padding: 10px 60px;
+  }
+
+}
+
+/* media quary for first section end  */
+
+/* -------media quary for nav bar st ------------ */
+@media screen and (max-width: 500px) {
+  .icon {
+    display: none;
+  }
+  .src {
+    /* opacity: 0; */
+    display: none;
+  }
+  .sidebar-icon {
+    margin-left: 98px;
+  }
+}
+/* -------media quary for nav bar  end ------------ */
+/* -----media quary for card start-------  */
+@media screen and (max-width: 500px) {
+  .main-box {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .main-box div {
+    margin: 10px;
+  }
+}
+/* --------media quary for card end -----*/
+
+/* --------media quary for 3rd section coin st -----*/
+@media screen and (max-width: 500px) {
+  .parent-main{
+      padding: 3%;
+  }
+  .about-main{
+      flex-direction: column;
+      
+  }
+  .bit-two img{
+      max-width: 100%;
+      vertical-align: middle;
+  }
+  .bit-btn{
+      padding: 15px 30px;
+  }
+
+}
+/* --------media quary for 3rd section coin end -----*/
+
+
